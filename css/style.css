@@ -137,8 +137,9 @@ button {
 
 button:hover {
   background-color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(0, 0%, 100%);
   color: hsl(25, 97%, 53%);
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 .rating label.selected {
   background-color: hsl(25, 97%, 53%);
