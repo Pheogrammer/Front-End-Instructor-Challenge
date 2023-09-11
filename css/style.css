@@ -52,28 +52,37 @@ body {
   cursor: pointer;
   font-size: 18px;
   margin: 0 10px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
 }
 
 .thank-you-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin-top: 20px;
 }
+
 h1 {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
+  font-family: "Overpass", sans-serif;
 }
 
 p {
   font-size: 15px;
   margin-bottom: 10px;
   color: hsl(217, 12%, 63%);
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
 }
+
 h1,
 p {
-  text-align: left;
+  text-align: center;
 }
+
 .rating {
   display: flex;
   justify-content: center;
@@ -95,7 +104,9 @@ button {
   cursor: pointer;
   font-size: 15px;
   margin-top: 20px;
-  border-radius: 5px;
+  border-radius: 50px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
 }
 
 .thank-you {
@@ -106,7 +117,7 @@ button {
 }
 
 .total-ratings {
-  font-weight: 400;
+  font-weight: 700;
   color: hsl(25, 97%, 53%);
   background-color: hsl(211, 20%, 22%);
   border-radius: 50px;
@@ -115,26 +126,51 @@ button {
   margin-top: 30px;
 }
 
-.rating label:hover {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-  transition: background-color 0.5s, color 0.5s;
+@media (max-width: 375px) {
+  .rating-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .star-text {
+    margin-bottom: 10px;
+  }
+
+  .rating label {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .total-ratings {
+    margin-top: 20px;
+  }
 }
 
-.rating label:not(:hover) {
-  transition: background-color 1s;
-}
+@media (min-width: 1440px) {
+  .rating-card {
+    max-width: 450px;
+  }
 
-button:hover {
-  background-color: hsl(0, 0%, 100%);
-  border: 1px solid hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);
-  transition: background-color 0.5s, color 0.5s, border 0.5s;
-}
-.rating label.selected {
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
-}
-.rating label:not(:hover):not(.selected) {
-  transition: background-color 1s;
+  .rating label {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
 }
