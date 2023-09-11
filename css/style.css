@@ -125,6 +125,29 @@ button {
   padding: 5px 15px;
   margin-top: 30px;
 }
+.rating label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.rating label:not(:hover) {
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  transition: background-color 0.5s, color 0.5s;
+}
+.rating label.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rating label:not(:hover):not(.selected) {
+  transition: background-color 1s;
+}
 
 @media (max-width: 375px) {
   .rating-card {
