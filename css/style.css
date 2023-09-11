@@ -17,18 +17,25 @@ body {
 
 .rating-card {
   background-color: hsl(215, 20%, 16%);
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   text-align: center;
   width: 80%;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
+}
+
+.star-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
 }
 
 #rating-form img {
   background-color: hsl(211, 20%, 22%);
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
   width: 15px;
   margin-bottom: 10px;
   float: left;
@@ -39,14 +46,20 @@ body {
   background-color: hsl(211, 20%, 22%);
   border-radius: 50%;
   padding: 10px;
-  width: 30px;
-  height: 30px;
-  color: hsl(0, 0%, 100%);
+  width: 25px;
+  height: 25px;
+  color: hsl(217, 12%, 63%);
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 10px;
 }
 
+.thank-you-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
 h1 {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
@@ -90,14 +103,14 @@ button {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 400;
-  color: #333;
 }
 
 .total-ratings {
   font-weight: 700;
   color: hsl(25, 97%, 53%);
   background-color: hsl(211, 20%, 22%);
-  border-radius: 5px;
+  border-radius: 50px;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px;
+  margin-top: 10px;
 }
