@@ -1,21 +1,5 @@
-/* @import url(https://fonts.google.com/specimen/Overpass);
-body {
-  font-family: "Overpass", sans-serif;
-  background-color:hsl(216, 12%, 8%);
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
+@import url(https://fonts.google.com/specimen/Overpass);
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-.rating-box{
-    background-color:hsl(213, 19%, 18%) ;
-    margin-top: 50%;
-} */
-/* Reset some default styles */
 body {
   font-family: "Overpass", sans-serif;
   margin: 0;
@@ -31,7 +15,7 @@ body {
 }
 
 .rating-card {
-  background-color: #fff;
+  background-color: hsl(213, 19%, 18%);
   border-radius: 10px;
   padding: 20px;
   text-align: center;

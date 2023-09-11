@@ -20,27 +20,16 @@
   </head>
 
   <body>
-    <!-- Rating state start -->
-    <div class="rating-box">
-      <div>
-        How did we do? Please let us know how we did with your support request.
-        All feedback is appreciated to help us improve our offering! 1 2 3 4 5
-        Submit
-
-        <!-- Rating state end -->
-
-        <!-- Thank you state start -->
-
-        You selected
-        <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch!
-      </div>
-    </div>
     <div class="container">
       <div class="rating-card">
+        <!-- Rating state start -->
         <form id="rating-form">
-          <h1>Rate Us</h1>
+          <img src="images/icon-star.svg" alt="" />
+          <p>
+            How did we do? Please let us know how we did with your support
+            request. All feedback is appreciated to help us improve our
+            offering!
+          </p>
           <div class="rating">
             <input type="radio" name="rating" id="rating1" value="1" />
             <label for="rating1">1</label>
@@ -55,11 +44,17 @@
           </div>
           <button type="submit">Submit</button>
         </form>
+        <!-- Rating state end -->
         <div class="thank-you" id="thank-you">
-          <h1>Rated</h1>
-          Thank you for rating! You selected
-          <span id="selected-rating"></span> out of 5.
+          <img src="images/illustration-thank-you.svg" alt="" />
+          <p class="total-ratings">
+            You selected <span id="selected-rating"></span> out of 5
+          </p>
+          <h1>Thank you!</h1>
+          Thank you! We appreciate you taking the time to give a rating. If you
+          ever need more support, don’t hesitate to get in touch!
         </div>
+        <!-- Thank you state start -->
       </div>
     </div>
 
