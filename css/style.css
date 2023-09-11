@@ -1,9 +1,10 @@
-@import url(https://fonts.google.com/specimen/Overpass);
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
 
 body {
   font-family: "Overpass", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: hsl(216, 12%, 8%); 
 }
 
 .container {
@@ -11,44 +12,57 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: hsl(216, 12%, 8%);
+  background-color: hsl(216, 12%, 8%); 
 }
 
 .rating-card {
-  background-color: hsl(213, 19%, 18%);
+  background-color: hsl(215, 20%, 16%);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 80%;
   max-width: 400px;
   margin: 0 auto;
 }
 
-h1 {
+#rating-form img {
+  background-color: hsl(211, 20%, 22%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 15px; 
+  margin-bottom: 10px; 
+}
+
+.rating label {
+  background-color:  hsl(211, 20%, 22%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 30px; 
+  height: 30px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin: 0 10px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
 }
 
 p {
   font-size: 16px;
   margin-bottom: 10px;
+  color: hsl(217, 12%, 63%); 
 }
 
 .rating {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 10px; 
 }
 
 .rating input[type="radio"] {
   display: none;
-}
-
-.rating label {
-  cursor: pointer;
-  font-size: 24px;
-  margin: 0 10px;
 }
 
 button {
@@ -66,4 +80,10 @@ button {
   display: none;
   margin-top: 20px;
   font-size: 18px;
+  color: #333; 
+}
+
+.total-ratings {
+  font-weight: 700;
+  color: #007bff; 
 }
