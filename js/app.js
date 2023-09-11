@@ -1,16 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const ratingForm = document.getElementById("rating-form");
-    const thankYouMessage = document.getElementById("thank-you");
-    const selectedRating = document.getElementById("selected-rating");
+  const ratingForm = document.getElementById("rating-form");
+  const thankYouMessage = document.getElementById("thank-you");
+  const selectedRating = document.getElementById("selected-rating");
+  const ratingLabels = document.querySelectorAll(".rating label");
 
-    ratingForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const formData = new FormData(ratingForm);
-        const userRating = formData.get("rating");
+  let userRating = null;
 
-        selectedRating.textContent = userRating;
-        thankYouMessage.style.display = "block";
+  ratingLabels.forEach((label) => {
+    label.addEventListener("click", function () {
+      ratingLabels.forEach((l) => l.classList.remove("selected"));
 
-        ratingForm.style.display = "none";
+      this.classList.add("selected");
+
+      userRating = this.textContent;
     });
+  });
+
+  ratingForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (userRating !== null) {
+      selectedRating.textContent = userRating;
+      thankYouMessage.style.display = "block";
+      ratingForm.style.display = "none";
+    }
+  });
 });
